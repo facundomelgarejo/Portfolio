@@ -1,3 +1,4 @@
+
 body{
     height: 100vh;
     margin: 0;
@@ -11,9 +12,8 @@ body{
     background: url(./assest/fondo.jpg);
     width: 100%;
     height: 100vh;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
-    
 }
 
 /*header*/
@@ -21,12 +21,17 @@ body{
     background-color: transparent;
     border-radius: 50%;
     border: none;
-
+   
 }
 
 .logo{
-    display: inline-block;
-    padding: 10px;
+    display: block;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    font-size:  20px;
+    letter-spacing: 3px;
 }
 
 .btn-logo{
@@ -41,6 +46,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: black;
+   
 }
 
 .nav.active{
@@ -49,7 +55,10 @@ body{
     width: 100%;
     transition: 1s;
     position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
+
 
 .menu{
     display: flex;
@@ -61,26 +70,51 @@ body{
 }
 
 .menu li a{
-    color: rgb(177, 177, 177);
+    color: rgba(155, 155, 155, 0.418);
     text-decoration: none;
     font-weight: 700;
+    display: block;
 }
 
-.menu li a:hover{
-    color: white;
+.menu li.active a{
+    color: rgb(255, 255, 255);  
+    transition: 1s; 
 }
 
 .scrol{
     height: 100px;
 }
 
+.nav-button{
+    position: absolute;
+    margin: 20px 10px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.nav-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /*Photo and name*/
-.conteiner-information{
+
+
+.information{
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     align-items: center;
+    transform: translate(-50%, -50%);
     background-color: transparent;
     font-size: 30px;
-   /*position: relative;*/
 }
 
 .conteiner-photo{
@@ -97,7 +131,6 @@ body{
 
 .conteiner-title{
    display: inline-block;
-   /*position: relative;*/
    margin: 0 auto 0 15px;
    text-align: center;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,13 +149,16 @@ body{
 }
 
 .title-end{
-    display: block;
+    display: inline;
     color:white;
+    margin: 0;
+    border-right: 3px solid white;
+
 }
 
+/*----ABOUT ME-----*/
 
-
-.conteinter-text{
+.conteiner-text{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -170,6 +206,10 @@ body{
     overflow: hidden;
     transition: 0.2s;
     margin: 0 auto;
+    background-color: rgba(231, 231, 231, 0.411);
+    text-decoration: none;
+    color: black;
+
 }
 
 .btn-donwload-cv:hover{
@@ -256,7 +296,7 @@ body{
     column-gap: 100px; /* ancho de columnas */
     display: inline-block;
     align-items: center;
-    
+    margin-bottom: 200px;
 }
 
 .logo-skills{
@@ -269,11 +309,239 @@ body{
 }
 
 .name-skill{
-    margin-left: 30%;
     display: inline-block;
     text-align: center;
     margin:0px auto;
     font-weight:500;
 
-    padding-bottom: 600px;
+    padding-bottom: 100px;
+}
+
+.title-contact{
+    
+    display: block;
+    position: absolute;
+    left: 20%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/*----CONTACT ME SECTION*/
+.container{
+	position: relative;
+	background:radial-gradient(#f69c3c, #3f87a6) center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    z-index: 0;
+   
+}
+
+.left{
+	background: url("./assest/contact.jpg") no-repeat center;
+	background-size: cover;
+	height: 70%;
+}
+
+.right{
+	padding: 25px 40px 25px 5px;
+}
+
+.contact-box h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    
+}
+
+.contact-box h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(71, 100, 163);
+    
+}
+
+.field{
+	width: 100%;
+	border:  2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+    max-height: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+    margin-left: 5%;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+
+@media screen and (max-width: 1140px){
+
+        /*Photo and name*/
+ 
+
+    .conteiner-photo{
+        display: none;
+    }
+
+    .information{
+        display: block;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .conteiner-title{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+    
+    /*----NAV BAR----*/
+    .nav-button{
+        display: flex;
+    }
+
+    .menu{
+        margin: 0;
+        padding: 0px;
+    }
+
+  
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul{
+        display: block;
+        flex-direction: column;
+        width: 93%;
+    }
+
+    .nav li{
+        text-align: right;
+        margin: 0 0 15px 0;
+    }
+
+    
+    
+    /*--- ABOUT ME----*/
+    .conteiner-logos{
+        display: block;
+        column-count: 1;
+        margin-bottom: 0px;
+    }
+
+    .title-about{
+        left: 5%;
+        margin-top: 100px;
+    }
+    
+    .p-about-name{
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    .p-about-info{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .title-skills{
+        margin-left: 5%;
+    }
+    
+
+    /*----- CONTACT ME ------*/
+    .left{
+		display: none;
+	}
+    .container{
+        position: relative;
+        background:transparent;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px 0px 10px;
+    }
+
 }
