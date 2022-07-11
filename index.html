@@ -6,49 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facundo Melgarejo Roma</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="shortcut icon" href="./assest/logo-FM.jpg">
 </head>
 <body>
-    <div class="main">
+    <div class="main seccion" id="portfolio">
             <header>
                 <nav class="nav">
                     <div class="logo">
-                        <a href="https://www.google.com.ar/"><button  class="conteiner-btn-logo"><img src="./assest/logo-FM.jpg" alt="" class="btn-logo"></button></a>
+                        <a href="https://facundomelgarejo.netlify.app/"><button  class="conteiner-btn-logo"><p class="logo">< FM/></p></button></a>
                     </div>
 
-                    <ul class="menu">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT ME</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
+                    <a class="nav-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <ul class="menu">
+                            <li class="menu-item" data-url="portfolio"><a href="#portfolio" >PORTFOLIO</a></li>
+                            <li class="menu-item" data-url="aboutme"><a href="#aboutme" >ABOUT ME</a></li> 
+                            <li class="menu-item" data-url="contactme"><a href="#contactme" >CONTACT ME</a></li>
+                        </ul>
+                    </div>
                     
                 </nav>  
             </header>
-            <div class="scrol">
-
-            </div>
+            <div class="scrol"></div>
         
-            <script src="menu.js"></script>
             
-            <div class="conteiner-information">
-                
-                    <div class="conteiner-photo">
-                        <img src="./assest/Foto-perfil.jpg" alt="" class="photo">
-                    </div>
+            
+          
+                <div class="information" >
+                        <div class="conteiner-photo">
+                            <img src="./assest/Foto-perfil.jpg" alt="Facundo Melgarejo Roma " class="photo">
+                        </div>
 
-                    <div class="conteiner-title">
-                        <title class="title-hi"> Hi! </title>
-                        <title class="title-name"> I'm Facundo Melgarejo Roma</title>
-                        <title class="title-end"> Frontend Developer</title>
-                    </div>
+                        <div class="conteiner-title">
+                            <title class="title-hi"> Hi! </title>
+                            <title class="title-name"> I'm Facundo Melgarejo Roma</title>
+                            <p class="title-end" id="texto"> </p>
+                        </div>
+                    
+                </div>
                 
-            </div>
+            
     </div>
 
-    <div class="about-me">
-        <div class="conteinter-text">
-            <h1 class="title-about">ABOUT ME</h1>
+        <div class="conteinter-text seccion" id="aboutme">
+            <h1 class="title-about" >ABOUT ME</h1>
             <p class="p-about-name"> My name is Facundo Gabriel Melgarejo Roma, from Ctes. Arg. I'm 22 years old. </p>
             <p class="p-about-info"> Actually I'm studing in UTN University in year fourth of sistems enginnering. 
                 In self-taught I'm learning about web-sites develops, and I like to propose me challenges, to make better my knowledges and skills. 
@@ -56,7 +61,7 @@
         </div>
 
         <div class="conteiner-cv">
-                <a class="btn-donwload-cv"> 
+                <a class="btn-donwload-cv" href="./assest/Facundo Gabriel Melgarejo Roma.pdf" download="CV - Facundo Melgarejo Roma" title="Download CV"> 
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
@@ -77,7 +82,24 @@
                 <p class="name-skill">JavaScript</p>
             </div>
         </div>
-    </div>
     
+        <div  class="contactme seccion" id="contactme">
+            <form action="https://formsubmit.co/facundomelgarejor@gmail.com" method="post">
+                <div class="container seccion">
+                    <div class="contact-box">
+                            <div class="left"></div>
+                            <div class="right">
+                                <h2 id="seccion">Contact Me</h2>
+                                <input type="text" name="name" class="field" placeholder="Name">
+                                <input type="email" name="email" class="field" placeholder="Email">
+                                <input type="number" name="phone" class="field" placeholder="Phone">
+                                <input type="text" name="message"  class="field" placeholder="Message" >
+                                <input type="submit" class="btn" value="Send"></input>
+                            </div> 
+                    </div>
+                </div>
+            </form>
+        </div>  
+    <script src="menu.js"></script>
 </body>
 </html>
