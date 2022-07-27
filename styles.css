@@ -1,0 +1,731 @@
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a1824 ;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #1e4669;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid white ;  /* creates padding around scroll thumb */
+  }
+
+.main{
+    background: url(./assest/fondo01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: auto; 
+    background-position: center;
+}
+
+/*header*/
+.conteiner-btn-logo{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+   
+}
+
+.logo{
+    display: block;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    font-size:  20px;
+    letter-spacing: 3px;
+}
+
+.btn-logo{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a1824;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+   
+}
+
+.nav.active{
+    /*border-bottom: #cdb788 2px solid; */
+    width: 100%;
+    transition: 1s;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a{
+    color: rgba(155, 155, 155, 0.418);
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+
+.menu li.active a{
+    color: white;  
+    transition: 1s; 
+}
+
+.scrol{
+    height: 100px;
+}
+
+.nav-button{
+    position: absolute;
+    margin: 20px 10px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.nav-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Photo and name*/
+
+
+.information{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.conteiner-photo{
+    display: inline-block;
+    margin: 0 0 0 auto;
+}
+
+
+.photo{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+}
+
+.conteiner-title{
+   display: inline-block;
+   margin: 0 auto 0 15px;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.title-hi{
+    display: block;
+    color: white;
+}
+
+.title-name{
+    display: block;
+    color: #f5e8ce;
+    font-weight: bold;
+}
+
+.title-end{
+    display: inline;
+    color:white;
+    margin: 0;
+    border-right: 3px solid white;
+
+}
+
+/* --- LANGUAGE-----*/
+.language{
+    margin-top: 0.6rem;
+    margin-right: 10px;
+    margin: 0.6rem 10px 0 30px;
+    display: block;
+}
+
+.language a{
+    background-color: rgba(209, 209, 209, 0.466);
+    color: black;
+    padding: 0 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.language button{
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+:lang(en) .language-en.active{
+    background-color: white;
+    border: 1px solid black;
+   
+}
+
+:lang(es) .language-es.active{
+    background-color: white;
+    border: 1px solid black;
+
+   
+}
+
+/*----ABOUT ME-----*/
+.conteiner-about-and-contact{
+    background: linear-gradient(#e0cfad, #c5b490,  #c9c2b4);
+}
+.conteiner-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.title-about{
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    margin-top: 100px;
+    color: #0f2132;
+}
+
+.p-about-name{
+    margin-left: 20%;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #0f2132;
+    
+}
+
+.p-about-info{
+    margin-left: 20%;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 2;
+    margin-right: 20%;
+    color: #0f2132;
+}
+
+/* comienzo animacion btn*/
+
+.conteiner-cv{
+    display: flex;
+    
+    margin-top: 40px;
+}
+
+
+.btn-donwload-cv{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin: 0 auto;
+    background-color: #f5e8ce5b;
+    text-decoration: none;
+    color: black;
+
+}
+
+.btn-donwload-cv:hover{
+    background: #324f69;
+    box-shadow: 0 0 10px #324f69, 0 0 40px #0f2132, 0 0 80px #324f69;
+    transition-delay: 1s;
+    color: white;
+}
+
+.btn-donwload-cv span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0f2132);
+}
+
+.btn-donwload-cv:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0f2132);
+}
+
+.btn-donwload-cv:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0f2132);
+}
+
+.btn-donwload-cv:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0f2132);
+}
+
+.btn-donwload-cv:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* fin animacion btn*/
+.conteiner-skills{
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-skills{
+    margin-top: 150px;
+    margin-left: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px; 
+    color: #0f2132;
+}
+
+.conteiner-logos{
+    column-count: 3; /* número de columnas */
+    column-gap: 100px; /* ancho de columnas */
+    display: inline-block;
+    align-items: center;
+}
+
+.logo-skills{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin:0px auto;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.name-skill{
+    display: inline-block;
+    text-align: center;
+    margin:0px auto;
+    font-weight:500;
+    color: #0f2132;
+    padding-bottom: 100px;
+}
+
+.title-contact{
+    
+    display: block;
+    position: absolute;
+    left: 20%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/*----CONTACT ME SECTION*/
+.container{
+	position: relative;
+	/* background:radial-gradient(#324f69, #e0cfad);*/
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#seccion{
+    color: #0a1824;
+}
+
+.contact-box{
+    
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: white; /*ACA #2e5d86*/
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    z-index: 0;
+   
+}
+
+.left{
+	background: url("./assest/Group-401.svg") no-repeat center;
+	background-size: cover;
+	height: 70%;
+    min-width: 450px;
+}
+
+.right{
+	padding: 25px 40px 25px 5px;
+}
+
+.contact-box h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    
+}
+
+.contact-box h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #3d3d3f;
+    
+}
+/*
+.field{
+	width: 100%;
+	border:  2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.form_group, .form_group2, .form_group3, .form_group4{
+    position: relative;
+    --color: #5757577e;
+    padding-bottom: 30px;
+}
+
+.form_input{
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #706c6c;
+    padding: .6rem .3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    --color: #3866f2;
+}
+
+/*---------------------*/
+textarea{
+	min-height: 150px;
+    max-height: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-contact{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: #173796;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    left: .4rem;
+}
+
+.btn-contact span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 44%;
+}
+
+.btn-contact .icono{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+.btn-contact svg{
+    color: white;
+    width: 35px;
+    height: 35px;
+    
+}
+.btn-contact:hover span{
+    left: 20px;
+}
+
+.btn-contact:hover .icono{
+    left: calc(100% - 50px);
+    opacity: 1;
+}
+/*
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: white;
+	color: #0a1824;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+    margin-left: 5%;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: rgb(214, 214, 214);
+    transition: 1s;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+*/
+
+
+@media screen and (max-width: 1440px){
+    .main{
+        background: url(./assest/fondo02.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover; 
+        background-position: center;
+    }
+        /*Photo and name*/
+ 
+
+}
+
+@media screen and (max-width: 1140px){
+    .conteiner-photo{
+        display: none;
+    }
+
+    .information{
+        display: block;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .conteiner-title{
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+    
+    .main {
+        background: url(./assest/fondo03.jpg);
+    }
+    /*----NAV BAR----*/
+    .nav-button{
+        display: flex;
+    }
+
+    .menu{
+        text-align: right;
+        padding: 0px;
+    }
+
+  
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul{
+        display: block;
+        flex-direction: column;
+        width: 93%;
+    }
+
+    .nav li{
+        text-align: right;
+        margin: 0 0 15px 0;
+    }
+
+    
+    
+    /*--- ABOUT ME----*/
+    .conteiner-logos{
+        display: block;
+        column-count: 1;
+        margin-bottom: 0px;
+    }
+
+    .title-about{
+        left: 5%;
+        margin-top: 100px;
+    }
+    
+    .p-about-name{
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    .p-about-info{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .title-skills{
+        margin-left: 5%;
+    }
+    
+
+    /*----- CONTACT ME ------*/
+    .left{
+		display: none;
+	}
+
+    .contact-box{
+        min-height: 100vh ;
+        max-height: 100vh;
+    }
+    
+    
+    .container.seccion{
+        display: block;
+    }
+
+
+    .right{
+        margin: 100px 0px 250px 0px;
+    }
+
+    .form_group, .form_group2, .form_group3, .form_group4{
+        margin-left: 2rem;
+    }
+
+    .btn-contact{
+        margin-left: 1.1rem;
+    }
+
+
+}

@@ -1,0 +1,5 @@
+Colores en Hexa: 
+#dac391 --> Flecha clara
+#cdb788 --> Flecha oscura
+#0f2132 --> Fondo
+#0a1824 --> Lineas del fondo 
