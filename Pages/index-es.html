@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facundo Melgarejo Roma</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./assest/logo-FM.jpg">
+    <title >Facundo Melgarejo Roma</title> 
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <link rel="shortcut icon" href="../assest/logo-FM.jpg">
 </head>
 <body>
         <div class="main seccion" id="portfolio">
             <header>
                 <nav class="nav">
                     <div class="logo">
-                        <a href="https://facundomelgarejo.netlify.app/"><button  class="conteiner-btn-logo"><p class="logo">< FM/></p></button></a>
+                        <a href="https://facundomelgarejo.netlify.app/" ><button  class="conteiner-btn-logo" alt="Boton Logo facundo melgarejo"><p class="logo" >< FM/></p></button></a><!-- modificacion-->
                     </div>
 
                     <a class="nav-button">
@@ -21,15 +21,15 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </a>
-                    <div class="navbar-links">
+                    <div class="navbar-links" role="Elegir idiomas">
                         <ul class="menu">
-                            <li class="menu-item" data-url="portfolio"><a href="#portfolio" >PORTAFOLIO</a></li>
-                            <li class="menu-item" data-url="aboutme"><a href="#aboutme" >SOBRE MI</a></li> 
-                            <li class="menu-item" data-url="contactme"><a href="#contactme" >CONTACTO</a></li>
+                            <li class="menu-item" data-url="portfolio"><a href="#portfolio" >PORTAFOLIO</a> </li><!-- modificacion-->
+                            <li class="menu-item" data-url="aboutme"><a href="#aboutme" >SOBRE MI</a></li> <!-- modificacion-->
+                            <li class="menu-item" data-url="contactme"><a href="#contactme" >CONTACTO</a></li><!-- modificacion-->
 
-                            <div class="language" >
-                                <button><a  class="language-es">ES </a></button>
-                                <button><a  class="language-en">EN </a></button> 
+                            <div class="language" role="Elegir idiomas">
+                                <button >  <a class="language-es">ES </a></button> <!-- modificacion-->
+                                <button data-message="Pulsa este boton para cambiar idioma a español"><a  class="language-en" >EN </a></button> <!-- modificacion-->
                             </div>
                         </ul>
 
@@ -46,7 +46,7 @@
           
                 <div class="information" >
                         <div class="conteiner-photo">
-                            <img src="./assest/Foto-perfil.jpg" alt="Facundo Melgarejo Roma " class="photo">
+                            <img src="../assest/Foto-perfil.jpg" alt="Foto de Perfil Facundo Melgarejo Roma " class="photo">
                         </div>
 
                         <div class="conteiner-title">
@@ -66,14 +66,14 @@
         <div class="conteiner-about-and-contact">
             <div class="conteinter-text seccion" id="aboutme">
                 <h1 class="title-about" >SOBRE MI</h1>
-                <p class="p-about-name"> Me llamo Facundo Gabriel Melgarejo Roma, soy de Ctes. Arg. tengo 22 años. </p>
+                <p class="p-about-name"> Me llamo Facundo Gabriel Melgarejo Roma, soy de Ctes. Arg. tengo 22 años.</p>
                 <p class="p-about-info">Actualmente estoy en cuarto año de la carrera de Ingeniera en Sistemas de Informacion en la UTN. 
                     De forma autodidacta estoy aprendiendo sobre el desarrollo de sitios web, me gusta proponerme retos, para mejorar mis conocimientos y habilidades. 
                 </p>
             </div>
 
             <div class="conteiner-cv">
-                    <a class="btn-donwload-cv" href="./assest/Facundo Gabriel Melgarejo Roma.pdf" download="CV - Facundo Melgarejo Roma" title="Download CV"> 
+                    <a class="btn-donwload-cv" href="./assest/Facundo Gabriel Melgarejo Roma.pdf" download="CV - Facundo Melgarejo Roma" title="Download CV" alt="Descargar CV"> <!-- modificacion-->
                         <span id="span1"></span>
                         <span id="span2"></span>
                         <span id="span3"></span>
@@ -86,11 +86,11 @@
             <h1 class="title-skills">Habilidades</h1>
             <div class="conteiner-skills">
                 <div class="conteiner-logos">
-                    <img src="./assest/html-5.png" alt="" class="logo-skills">
+                    <img src="../assest/html-5.png" alt="" class="logo-skills">
                     <p class="name-skill">HTML</p>
-                    <img src="./assest/css.png" alt="" class="logo-skills">
+                    <img src="../assest/css.png" alt="" class="logo-skills">
                     <p class="name-skill">CSS</p>
-                    <img src="./assest/js.png" alt="" class="logo-skills">
+                    <img src="../assest/js.png" alt="" class="logo-skills">
                     <p class="name-skill">JavaScript</p>
                 </div>
             </div>
@@ -129,9 +129,11 @@
                                         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                     </svg>
                                 </div>
-                                <span>Enviar</span>
+                                <span >Enviar</span><!-- modificacion-->
                             </button>
                             
+
+
                            
                             
                             
@@ -140,10 +142,17 @@
                 </div>
             </div>
         </form>
+        
+        <div class="mp"> 
+        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="356555477-bb28a9ea-879f-4c48-84bf-55c29f31fa44" data-source="button">
+                            </script>
+        </div>
+
     </div>  
     </div>
 
 
-    <script src="menu.js"></script>
+    <script src="../JavaScript/menu.js"></script>
 </body>
 </html>

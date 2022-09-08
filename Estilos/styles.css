@@ -1,3 +1,9 @@
+.mp{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
 
 body{
     height: 100vh;
@@ -23,7 +29,7 @@ body::-webkit-scrollbar {
   }
 
 .main{
-    background: url(./assest/fondo01.jpg);
+    background: url(../assest/fondo01.jpg);
     width: 100%;
     height: 100vh;
     background-size: auto; 
@@ -421,7 +427,7 @@ body::-webkit-scrollbar {
 }
 
 .left{
-	background: url("./assest/Group-401.svg") no-repeat center;
+	background: url("../assest/Group-401.svg") no-repeat center;
 	background-size: cover;
 	height: 70%;
     min-width: 450px;
@@ -588,7 +594,7 @@ textarea{
 
 @media screen and (max-width: 1440px){
     .main{
-        background: url(./assest/fondo02.jpg);
+        background: url(../assest/fondo02.jpg);
         width: 100%;
         height: 100vh;
         background-size: cover; 
@@ -629,7 +635,7 @@ textarea{
 @media screen and (max-width: 600px){
     
     .main {
-        background: url(./assest/fondo03.jpg);
+        background: url(../assest/fondo03.jpg);
     }
     /*----NAV BAR----*/
     .nav-button{
